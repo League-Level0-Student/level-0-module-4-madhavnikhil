@@ -1,5 +1,7 @@
 package _02_boolean._1_sleepy_head;
 
+import java.util.jar.JarOutputStream;
+
 import javax.swing.JOptionPane;
 import org.jointheleague.graphical.robot.Robot;
 
@@ -39,7 +41,7 @@ public class SleepyHead {
 		JOptionPane.showMessageDialog(null, "Congratulations. You passed your exam. You get a amazon gift card!");
 	}
       else {
-		JOptionPane.showMessageDialog(null, "Sorry but you are going to have to repeat the material and you will get grounded!");
+		JOptionPane.showMessageDialog(null, "Sorry but you are going to have to repeat the material!");
 	}
 	
 		
@@ -68,11 +70,11 @@ public class SleepyHead {
 		
 		boolean isRed;
 		// Ask the user what color to draw with. Based on their answer, set the isRed variable
-		
+		String Dumbledore = JOptionPane.showInputDialog("What color do you draw with?");
 		
 		boolean isSquare;		
 		// Now ask the user what shape to draw. Based on their answer, set the isSquare variable
-		
+	    String McGonagall = JOptionPane.showMessageDialog(null, "isSquare");
 		
 		// Now you MUST use the && operator to join the booleans for this code. 
 		// Ask your teacher if you are not sure how
