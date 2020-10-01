@@ -1,5 +1,6 @@
 package _02_boolean._1_sleepy_head;
 
+import java.awt.Color;
 import java.util.jar.JarOutputStream;
 
 import javax.swing.JOptionPane;
@@ -61,7 +62,7 @@ public class SleepyHead {
 				gameIsOver = true;
 			
 			// If they answer "yes", change gameIsOver to true
-
+			
 		}
 		// Tell the user "game is over" 
 		
@@ -74,9 +75,13 @@ public class SleepyHead {
 		
 		boolean isSquare;		
 		// Now ask the user what shape to draw. Based on their answer, set the isSquare variable
-	    String McGonagall = JOptionPane.showMessageDialog(null, "isSquare");
+	    String McGonagall = JOptionPane.showInputDialog("is Square");
 		
-		// Now you MUST use the && operator to join the booleans for this code. 
+		// Now you MUST use the && operator to join the booleans for this code.
+	    if(Dumbledore.equalsIgnoreCase("red") && McGonagall.equalsIgnoreCase("Square")) {
+	    	drawRedSquare();
+	    }
+	   
 		// Ask your teacher if you are not sure how
 		// Use an if statement to ONLY draw a red square when it has been requested (use the method below)
 		// otherwise, tell the user you don't know how to draw that shape
@@ -88,5 +93,12 @@ public class SleepyHead {
 	static void drawRedSquare() {
 		Robot rob = new Robot();
 		// Complete the rest of this method
+		rob.setPenColor(Color.red);
+		rob.penDown();
+		for (int i = 0; i < 4; i++) {
+			  rob.move(100);
+			  rob.turn(90);
+			  
+			}
 	}	
 }
