@@ -2,18 +2,24 @@ PImage face;
 
 void setup() {
 
-face = loadImage("face.jpg");
+face = loadImage("creeper.png");
 size(800,600);
-face.resize(width, height);
+face.resize(width, height); 
   
   
 }
 void draw() {
-ellipse(4, 4, width,height);
+  image(face, 0, 0);
+  println(mouseX + "    " + mouseY);
+ellipse(20, 30, 50, 50);
 fill (#FFFFFF);
 
 
-  
+
+
+
+
+
   
   
 }

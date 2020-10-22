@@ -13,7 +13,13 @@ public class PiAloud {
 	
 	
 	// 1. Make a main method and make sure your program can run
+ARE YOU THERE?
+		
+HELLO!
 
+DO YOU NEED HELP?
+		
+///\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\\\
 	// 2. Make a String variable to hold 20 digits of Pi. You could use http://www.piday.org/million/ to get this.
 
 	// 3. Print out 3 digits of Pi. The first value is "pi.charAt(0)", the second is "pi.charAt(1)"
